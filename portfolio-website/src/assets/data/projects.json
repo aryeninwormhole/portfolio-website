@@ -1,0 +1,34 @@
+[
+  {
+    "id": "proj-001",
+    "title": "Dynamic Portfolio Website",
+    "description": "The very website you are browsing! Built with React, showcasing dynamic content loading and interactive elements.",
+    "imageUrl": "https://via.placeholder.com/350x250?text=Portfolio+Site",
+    "projectUrl": "#",
+    "technologies": ["React", "JavaScript", "HTML5", "CSS3", "React Router"]
+  },
+  {
+    "id": "proj-002",
+    "title": "E-commerce Platform",
+    "description": "A full-featured online store with product listings, shopping cart, and user accounts. Backend powered by Node.js.",
+    "imageUrl": "https://via.placeholder.com/350x250?text=E-commerce",
+    "projectUrl": "#",
+    "technologies": ["React", "Node.js", "Express", "MongoDB", "Stripe API"]
+  },
+  {
+    "id": "proj-003",
+    "title": "Mobile Weather App",
+    "description": "A cross-platform mobile application providing real-time weather updates and forecasts, built using React Native.",
+    "imageUrl": "https://via.placeholder.com/350x250?text=Weather+App",
+    "projectUrl": "#",
+    "technologies": ["React Native", "Expo", "OpenWeatherMap API"]
+  },
+  {
+    "id": "proj-004",
+    "title": "Data Visualization Dashboard",
+    "description": "An interactive dashboard for visualizing complex datasets, created with D3.js and React.",
+    "imageUrl": "https://via.placeholder.com/350x250?text=Data+Dashboard",
+    "projectUrl": "#",
+    "technologies": ["React", "D3.js", "Python", "Flask"]
+  }
+]

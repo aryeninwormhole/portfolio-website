@@ -1,0 +1,67 @@
+/* src/components/Navbar.css */
+.navbar {
+  background-color: #333;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover,
+.navbar-links li a.active {
+  color: #61dafb; /* A common React blue, or choose another highlight color */
+  /* text-decoration: underline; /* Optional: if you want underline on hover/active */
+}
+
+@media (max-width: 768px) { /* Tablet and smaller */
+  .navbar {
+    flex-direction: column; /* Stack brand and links */
+    padding: 0.5rem 1rem; /* Adjust padding */
+  }
+
+  .navbar-brand {
+    margin-bottom: 0.5rem; /* Space below brand when stacked */
+  }
+
+  .navbar-links {
+    width: 100%; /* Make links take full width */
+    justify-content: center; /* Center links when stacked */
+    flex-wrap: wrap; /* Allow links to wrap if too many */
+  }
+
+  .navbar-links li {
+    margin-left: 10px; /* Adjust margin for smaller screens */
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) { /* Mobile specific */
+  .navbar-links li a {
+    font-size: 0.9rem; /* Slightly smaller font for links */
+  }
+}

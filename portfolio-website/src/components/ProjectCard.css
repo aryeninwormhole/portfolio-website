@@ -1,0 +1,105 @@
+/* src/components/ProjectCard.css */
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 320px; /* Base width, adjust as needed */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+  text-align: left; /* Align text to the left within cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push content and link apart */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* Enhance shadow on hover */
+}
+
+.project-card-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+  border-radius: 4px 4px 0 0; /* Rounded corners for top of image */
+}
+
+.project-card-content {
+  flex-grow: 1; /* Allow content to take available space */
+  display: flex; /* Added for flex column layout */
+  flex-direction: column; /* Added for flex column layout */
+}
+
+.project-card-content p { /* Ensure description takes available space before technologies */
+    flex-grow: 1;
+}
+
+.project-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 1em;
+  line-height: 1.4;
+  margin-bottom: 15px; /* Space before the link */
+  flex-grow: 1; /* Allow description to take available space */
+}
+
+.project-card-link {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.project-card-link:hover {
+  background-color: #0056b3;
+}
+
+.project-card-technologies {
+  margin-top: 10px; /* Space above technologies list */
+  margin-bottom: 15px; /* Space below technologies, before link */
+  font-size: 0.9em;
+}
+
+.project-card-technologies strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.project-card-technologies ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.project-card-technologies li {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: calc(50% - 20px); /* Two cards per row on tablets, considering gap */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    width: 90%; /* One card per row on mobile, taking most of the width */
+    max-width: 350px; /* Optional: prevent it from becoming too wide on wide mobile screens */
+  }
+}
